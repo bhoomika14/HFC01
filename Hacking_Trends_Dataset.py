@@ -43,5 +43,5 @@ for i in range(hacking_trends.shape[0]):
     except:
         pass
 
-#hacking_trends.to_csv("Hacking_Trends.csv", index = False)
+hacking_trends.to_csv("Hacking_Trends.csv", index = False)
 
