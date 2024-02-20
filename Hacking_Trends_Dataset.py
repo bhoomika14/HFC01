@@ -12,7 +12,7 @@ hacking_trends = pd.DataFrame()
 title_link = []
 
 URL = "https://thehackernews.com/"
-for i in range(1, 50):
+for i in range(120):
     driver.get(URL)
     story_link = driver.find_elements(By.CSS_SELECTOR, 'div a')
 
@@ -26,6 +26,7 @@ hacking_trends['title_link'] = title_link
 hacking_trends['titles'] = ''
 hacking_trends['posted_date'] = ''
 hacking_trends['hacking_type'] = ''
+hacking_trends['text_loc'] = ''
 
 for i in range(hacking_trends.shape[0]):
     url = hacking_trends.title_link[i]
@@ -36,10 +37,13 @@ for i in range(hacking_trends.shape[0]):
     title_text = soup.find("h1", {"class": "story-title"})
     post_date = soup.find("span", {"class": "author"})
     hack_type = soup.find("span", {"class": "p-tags"})
+    loc_para = soup.find("p")
+
     try:
         hacking_trends.titles[i] = title_text.text
         hacking_trends.posted_date[i] = post_date.text
         hacking_trends.hacking_type[i] = hack_type.text
+        hacking_trends.text_loc[i] = loc_para.text
     except:
         pass
 
