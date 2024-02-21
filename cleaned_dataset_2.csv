@@ -1,4 +1,4 @@
-title_link,titles,posted_date,hacking_type,hacking_sub_type
+title_link,titles,posted_date,type,sub_type
 https://thehackernews.com/2024/02/meta-warns-of-8-spyware-firms-targeting.html,"  Meta Warns of 8 Spyware Firms Targeting iOS, Android, and Windows Devices ",2024-02-19, Mobile Security ,Cyber Espionage
 https://thehackernews.com/2024/02/anatsa-android-trojan-bypasses-google.html,"  Anatsa Android Trojan Bypasses Google Play Security, Expands Reach to New Countries ",2024-02-19, Malware ,Mobile Security
 https://thehackernews.com/2024/02/russian-linked-hackers-breach-80.html,  Russian-Linked Hackers Target 80+ Organizations via Roundcube Flaws ,2024-02-19, Cyber Espionage ,Vulnerability
