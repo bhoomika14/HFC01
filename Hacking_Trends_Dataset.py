@@ -26,7 +26,6 @@ hacking_trends['title_link'] = title_link
 hacking_trends['titles'] = ''
 hacking_trends['posted_date'] = ''
 hacking_trends['hacking_type'] = ''
-hacking_trends['text_loc'] = ''
 
 for i in range(hacking_trends.shape[0]):
     url = hacking_trends.title_link[i]
